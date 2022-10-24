@@ -1,4 +1,4 @@
-# **Credit Card Default Prediction** 
+# **Tanzanian Water Wells Prediction** 
 ### Authors: [Abduba Galgalo](https://github.com/Abduba011), [Faith Makokha](https://github.com/faithmaks), [Femi Kamau](https://github.com/ctrl-Karugu), [John Mungai](https://github.com/Johnspes), [Susan Mungai](https://github.com/SueMungai), and [Willy Angole](https://github.com/Willy-Angole)
 
 ---
