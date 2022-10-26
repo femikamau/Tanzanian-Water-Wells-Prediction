@@ -7,14 +7,73 @@
 
 
 ## Overview
+Water makes up about 70% of the earth’s surface and is among the few basic needs common to all living creatures. Unfortunately, 96.5 percent of its coverage makes up oceans, which makes up for some scarcity on land.
+Tanzania is one of those countries that have to grapple with the scarcity  of this life saving need. As a  developing nation with a population of over 57,000,000,  it has a hard time meeting the demand for safe drinking water due to limited resources for water extraction. There are already some water pumps available in the country but unfortunately, not all are functional and others need repair.  
+
+The World Health Organization- (WHO), understands that three out of ten people still lack access to clean water, highlighting the critical need for investment to improve water hygiene and accessibility. Water poverty has been considered to drive serious illnesses, high infant mortality rates, poor education, slumped economies and unproductive agricultural conditions in a majority of the regions.
+
 
 ---
 ---
 
-### 1. Business Understanding
+## 1. Business Understanding
+#### Problem Statement
+Tanzania is currently failing to meet the potable water requirements for its population.  Despite already building water wells to offset this problem, many are unfortunately non-functional and others are in need of repair. 
+As a result,  our stakeholder, WHO, has narrowed down their interest to drilling more water wells and maintaining/ revamping  existing ones within the country, in an effort to ensure availability of quality and quantity drinking water countrywide . 
+
+Our role as the data scientist in this project will be to identify patterns in non-functional wells, with the aim of influencing how new ones are built. Furthermore, using these patterns, we will enable our stakeholder to accurately predict existing water points in need of intervention ensuring the people of Tanzania have access to clean potable water
+
+#### Specific Objectives
+* To identify the trends/patterns between both non-functional and functional wells 
+* To identify non-functioning wells using a simple analysis, and predict the functionality of a well based on available variables.
+
+#### Research Questions
+* How can we apply  Machine Learning and necessary classification methods to predict  functionality  of  wells in Tanzania?
+* Are there any common features that are consistent with  functional and non-functional wells?
+* Can we identify ways to help build better wells?
+
+#### Success Criteria
+
+##### Business Success Criteria (Review)
+ * To ensure that newly constructed wells are of good quality water for the communities.
+ * To  correctly identify functionality of a well and determine its viability.
+ * To successfully predict the type of wells that dry up and determine the type of wells to build based on the area?
+ * To determine working wells in different regions and which ones need repair or improved management.
+ * To ensure built wells are  longer lasting/ more viable.
+
+##### Project Success Criteria
+Generating a model that will be able to correctly predict the quality status of the wells in Tanzania with an accuracy of 80%.
+
+
+
 
 ---
 ### 2. Data Understanding
+#### Overview
+In this project we shall use a  dataset containing information about existing water wells in Tanzania  sourced from an ongoing  DrivenData competition.
+
+
+####  2.1 Data Description
+The dataset contains 59,400 records and spans 40 columns. Of these columns, we identified 31 to be categorical, and 9 as numerical.  We were able to further group the columns into the general features being captured.
+          Numerical
+* amount_tsh - Total static head (amount water available to waterpoint)
+
+		Categorical
+* extraction_type - The kind of extraction the waterpoint uses
+* extraction_type_class - The kind of extraction the waterpoint uses
+* extraction_type_group  - The kind of extraction the waterpoint uses
+* water_quality -  The quality of the water
+* quality_group -   The quality of the water
+* quantity - The quantity of water
+* quantity_group - The quantity of water
+* source - The source of the water
+* source_type - The source of the water
+* source_class - The source of the water
+* waterpoint_type - The kind of waterpoint
+* waterpoint_type_group - The kind of waterpoint
+* status_group - The condition of the wells (target variable)
+
+
 
 ---
 ### 3. Data Preparation
