@@ -54,9 +54,15 @@ In this project we shall use a  dataset containing information about existing wa
 
 
 ####  2.1 Data Description
-The dataset contains 59,400 records and spans 40 columns. Of these columns, we identified 31 to be categorical, and 9 as numerical.  We were able to further group the columns into the general features being captured.
+The dataset contains 59,400 records and spans 40 columns. Of these columns, we identified 31 to be categorical, and 9 as numerical.  We were able to further group the columns into the general features being captured. Some of the rows include:
           Numerical
 * amount_tsh - Total static head (amount water available to waterpoint)
+* longitude  -  GPS coordinate
+* latitude -  GPS coordinate
+* gps_height -  Altitude of the well
+* population - Population around the well (those living near it)
+
+
 
 		Categorical
 * extraction_type - The kind of extraction the waterpoint uses
@@ -77,6 +83,22 @@ The dataset contains 59,400 records and spans 40 columns. Of these columns, we i
 
 ---
 ### 3. Data Preparation
+
+his dataset’s analysis and classification will  help our stakeholders to improve maintenance of the present water wells or give useful information for future wells. 
+
+#### 3.1 Data Selection.
+
+There are a lot of repetitive columns in the dataset, for example. `payment` and `payment_type`, `source` and `source_type` which have the same information. We scrapped the columns and for the sake of preparing our data for modelling purposes. 
+We have included columns that contain information about the location and the basin that is closest to the water wells geographically. 
+
+#### 3.2  Data Cleaning.
+
+The data was checked for missing values and a number were found in the columns; `funder`, `installer` , `subvillage`, `scheme_management` and `permit`  the percentage of missing values in the particular columns were a small amount, thus were dropped to ensure completeness of the dataset. 
+Checking for validity in the data, the dataset was checked for any duplicated values and outliers. The duplicated records were not dropped as it does not mean that they were similar wells but just built under the same project.
+We also chose not to drop the outliers, as it did not display erroneous data but will be further looked into in the analysis section. 
+After cleaning the dataset, we need to bring uniformity by formatting and the columns to be  readable and easily interpretable.So we defined functions to make these possible.
+Moreover, we verified that the values of various columns are consistent. The names of installers and funders had numerous instances of the same funder and/or installer, but with misspelt names and/or typographical errors.
+
 
 ---
 
