@@ -55,7 +55,8 @@ In this project we shall use a  dataset containing information about existing wa
 
 ####  2.1 Data Description
 The dataset contains 59,400 records and spans 40 columns. Of these columns, we identified 31 to be categorical, and 9 as numerical.  We were able to further group the columns into the general features being captured. Some of the rows include:
-          Numerical
+
+Numerical
 * amount_tsh - Total static head (amount water available to waterpoint)
 * longitude  -  GPS coordinate
 * latitude -  GPS coordinate
@@ -64,7 +65,7 @@ The dataset contains 59,400 records and spans 40 columns. Of these columns, we i
 
 
 
-		Categorical
+Categorical
 * extraction_type - The kind of extraction the waterpoint uses
 * extraction_type_class - The kind of extraction the waterpoint uses
 * extraction_type_group  - The kind of extraction the waterpoint uses
