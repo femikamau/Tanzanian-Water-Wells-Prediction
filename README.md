@@ -104,14 +104,35 @@ Moreover, we verified that the values of various columns are consistent. The nam
 ---
 
 ### 4. Modeling
+To begin, we point out that our dataset is massive and that there is class imbalance; specifically, 54.1% of our data is considered to be "functional," while 38.8% is "non-functional," and the remaining 7% pertains to "non-functional wells that need repair." 
+We One-Hot-Encoded the categorical variables and categorised the target.
+Since the majority of our information comes from operational wells, maintaining the current imbalance isn't a priority for us. 
+Our baseline model was  LogisticRegression with the StandardScaler as our scaler, just to test how our chosen attributes would perform on a basic level.
+We then explored other more sophisticated models like the RandomForest, Decision trees,  K-Nearest -Neighbours and XGBoost.
+
 
 ---
 
 ### 5. Evaluation 
+We used a pipeline to scale the data and then fit it to the model. We then used cross validation to ensure that our model was not overfitting. We also used a confusion matrix to evaluate the performance of our model.
+
+Despite the fact that our models did not achieve the desired accuracy of 75%, we were able to achieve an accuracy of 70% which is a good start for our project and is within an acceptable range of +/- 5%
+
 
 ---
+### 7. Conclusion 
+The accuracy of both our random forest classifier and decision tree models was 70%. While this is still a good predictive model, we would like to undertake further feature engineering to boost this recall score if we had more time. 
+We achieved our objectives to be able to predict the functional wells and had an acceptable accuracy score.
 
-### 6. Deployment
+
+### 6. Recommendations
+When our stakeholder decides to construct additional wells in Tanzania, they may want to look into the Lake Rukwa as a basin area, where there are disproportionately more non-functional wells than functional ones.
+The region of Dodoma has more non-functional wells than functional, this area needs to be looked into. 
+Wells permitted to operate tend to be more viable and functional over time than those without.
+The wells that are not paid for tend to be non-functional as they are maybe misused by the public, maybe implementing an affordable payment scheme will help curb this. 
+Wells without permits also have a higher chance to be non-functional so this means that our stakeholder needs to make sure that they are permitted to ensure they are suitable for human consumption as well. 
+Wells with close proximity to Lake Victoria basin tend to be long-lasting compared to the rest of the basins. 
+
 
 ---
 ---
