@@ -150,15 +150,29 @@ Wells with close proximity to Lake Victoria basin tend to be long-lasting compar
 |
 ├── index.ipynb                          <- Narrative documentation of analysis in Jupyter Notebook
 |
+├── modeling.ipynb                       <- Narrative documentation of modeling in Jupyter Notebook
+|
+├── cleaned_data.csv                     <- The cleaned dataset
+|
+├── presentation.pdf                     <- PDF version of project presentation
+|
+├── write_up.pdf                         <- PDF version of project write up
+|
 └── data                                 <- Datasets used in the analysis
-     ├── credit_default.csv
+     ├── well_data_labels.csv
      |          
-     └── data_description.txt            
+     └── well_data_values.csv
+
 ```
 
 ---
 
 ## Technologies Used
+
+- Python
+- Pandas
+- Matplotlib
+- Sklearn
 
 ---
 ## For More Information
